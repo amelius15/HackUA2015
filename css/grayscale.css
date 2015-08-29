@@ -162,12 +162,21 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
-    text-shadow: 4px 0 0 #F4BD2C;
+    text-shadow: 4px 0 0 #F4BD2C; /*gold*/
 }
+
+/* shrink the shadow on small screens */
+@media only screen and (max-width : 768px) {
+    .intro .intro-body .brand-heading {
+        text-shadow: 2px 0 0 #F4BD2C; 
+    }
+
+}
+
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    color:#512F75;
+    color:#512F75; /*purple*/
     /*text-shadow: 1px 0 0px rgba(0,0,0,1);*/
 
 }
